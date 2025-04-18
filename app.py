@@ -222,4 +222,4 @@ if __name__ == '__main__':
     # Check if database exists, if not suggest to run db_setup.py first
     if not os.path.exists(DB_PATH):
         print("Database not found. Please run 'python db_setup.py' first.")
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
